@@ -1,0 +1,19 @@
+diff -aurN leafpad-0.8.16.orig/src/main.c leafpad-0.8.16/src/main.c
+--- leafpad-0.8.16.orig/src/main.c	2009-08-14 08:19:48.000000000 +0200
++++ leafpad-0.8.16/src/main.c	2009-08-14 08:23:13.000000000 +0200
+@@ -303,11 +303,11 @@
+ 	pub->mw = create_main_window();
+ 	
+ 	conf = g_malloc(sizeof(Conf));
+-	conf->width       = 600;
+-	conf->height      = 400;
+-	conf->fontname    = g_strdup("Monospace 12");
++	conf->width       = 640;
++	conf->height      = 480;
++	conf->fontname    = g_strdup("Monospace 9");
+ 	conf->wordwrap    = FALSE;
+-	conf->linenumbers = FALSE;
++	conf->linenumbers = TRUE;
+ 	conf->autoindent  = FALSE;
+ 	
+ 	load_config_file(conf);
